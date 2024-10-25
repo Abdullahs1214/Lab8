@@ -4,7 +4,7 @@ import androidx.annotation.Nullable;
 
 import java.util.Objects;
 
-public class City {
+public class City implements Comparable{
 
     private String city;
     private String province;
@@ -21,7 +21,8 @@ public class City {
     String getProvinceName(){
         return this.province;
     }
-/*
+
+    @Override
     public int compareTo(Object o){
         City city = (City) o;
         return this.city.compareTo(city.getCityName());
@@ -38,5 +39,5 @@ public class City {
     public int hashCode(){
         return Objects.hash(city,province);
     }
- */
+
 }
