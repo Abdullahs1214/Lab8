@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class CustomList extends ArrayAdapter<City> {
 
+    public int countCities;
     private ArrayList<City> cities;
     private Context context;
 
@@ -60,4 +61,8 @@ public class CustomList extends ArrayAdapter<City> {
     public void deleteCity(City city) {
         cities.remove(city);
     }
+    public void countCities(){
+        //return cities.size();
+    }
+
 }
